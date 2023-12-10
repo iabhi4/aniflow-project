@@ -25,7 +25,7 @@ Run copy_bigdata.sh, import_bigdata.sh, copy_animeinfo.sh, import_animeinfo.sh i
 
 **Run the spark analysis:**
 
-Build the project using `mvn clean package` and copy the shade jar to master node of spark - `Kubectl [path-to-the-jarfile] default/spark-release-master-0:/opt/bitnami/spark`, you can find the jar file in the /target folder after building the project.
+Build the project using `mvn clean package` and copy the shade jar to master node of spark - `Kubectl [path-to-the-jarfile] default/my-spark-master-0:/opt/bitnami/spark`, you can find the jar file in the /target folder after building the project.
 
 Finally run the analysis with - `./bin/spark-submit --class com.project.AniflowApplication \
 --master spark://my-spark-master-0.my-spark-headless.default.svc.cluster.local:7077 \
