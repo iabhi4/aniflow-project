@@ -1,4 +1,5 @@
 **Prerequisites:**
+**This project is made to be run on MacOS with a silicon chip**
 
 Give executable permission to requirements.sh - `chmod +x requirements.sh`
 
